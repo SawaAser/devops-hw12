@@ -30,7 +30,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: run DB
       run: |
-        python test/db.py -a
+        python ./test/db.py -a
     - name: Test with pytest
       run: |
         pytest
