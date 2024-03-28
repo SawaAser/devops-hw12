@@ -1,5 +1,5 @@
 import unittest
-from app import app
+from devops-hw12.app import app
 
 
 class Test(unittest.TestCase):
