@@ -1,5 +1,5 @@
-from app import *
 import unittest
+from app import app
 
 
 class Test(unittest.TestCase):
@@ -7,7 +7,7 @@ class Test(unittest.TestCase):
         self.app = app.test_client()
 
     def test_get_all_product(self):
-        resource = self.app.get('api/products')
+        resource = self.app.get('/api/products')
         self.assertEqual(resource.status_code, 200)
 
 
