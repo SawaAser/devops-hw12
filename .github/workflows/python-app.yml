@@ -30,4 +30,4 @@ jobs:
       run: python db.py -a
     - name: Test with pytest
       run: pytest
-      depends-on: Run DB
+    
